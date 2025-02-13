@@ -44,7 +44,7 @@ jobs:
 
             # Navigate to the project directory and deploy
             cd /home/azureuser/
-            cd FastAPI-CI-CD-Book_Project/
+            cd FastAPI-CI-CD-Book-Project/
             git pull
             sudo docker-compose up -d --build
           
