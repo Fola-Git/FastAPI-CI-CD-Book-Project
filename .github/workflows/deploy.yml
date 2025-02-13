@@ -43,8 +43,9 @@ jobs:
             sudo fuser -k 80/tcp
 
             # Navigate to the project directory and deploy
+            git clone https://github.com/Fola-Git/FastAPI-CI-CD-Project.git
             cd /home/azureuser/
-            cd FastAPI-CI-CD-Book-Project/
+            cd FastAPI-CI-CD-Project/
             git pull
             sudo docker-compose up -d --build
           
