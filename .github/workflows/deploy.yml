@@ -1,4 +1,4 @@
-name: CI-CD Pipeline
+name: CD Pipeline
 on:
   push:
     branches: [main]
@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
- 
+
       - name: Deploy via SSH
         uses: appleboy/ssh-action@master
         with:
@@ -45,9 +45,7 @@ jobs:
             # Navigate to the project directory and deploy
             git clone https://github.com/Fola-Git/FastAPI-CI-CD-Book-Project.git
             cd /home/azureuser/
-            cd FastAPI-CI-CD-Book-Project/
-            git fetch origin main
-            git reset --hard origin/main
+            cd FastAPI-CI-CD-Book_Project/
+            git pull
             sudo docker-compose up -d --build
-          
           
