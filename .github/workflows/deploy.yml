@@ -44,7 +44,7 @@ jobs:
 
             # Navigate to the project directory and deploy
             git clone https://github.com/Fola-Git/FastAPI-CI-CD-Book-Project.git
-            cd /home/folashade/
+            cd /home/azureuser/
             cd FastAPI-CI-CD-Book-Project/
             git fetch origin main
             git reset --hard origin/main
