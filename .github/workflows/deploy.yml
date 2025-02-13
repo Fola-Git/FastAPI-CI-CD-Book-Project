@@ -46,6 +46,8 @@ jobs:
             git clone https://github.com/Fola-Git/FastAPI-CI-CD-Book-Project.git
             cd /home/folashade/
             cd FastAPI-CI-CD-Book-Project/
-            git pull
+            git fetch origin main
+            git reset --hard origin/main
             sudo docker-compose up -d --build
+          
           
